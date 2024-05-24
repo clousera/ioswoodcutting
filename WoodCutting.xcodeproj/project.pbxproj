@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		874140EF2C00FDF700D7379D /* WoodCutter_ChatGPT_V0.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 874140EE2C00FDF700D7379D /* WoodCutter_ChatGPT_V0.pdf */; };
 		87D0A8FF2BF98B0E003B6BA1 /* WoodCuttingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0A8FE2BF98B0E003B6BA1 /* WoodCuttingApp.swift */; };
 		87D0A9012BF98B0E003B6BA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0A9002BF98B0E003B6BA1 /* ContentView.swift */; };
 		87D0A9032BF98B0F003B6BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0A9022BF98B0F003B6BA1 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		874140EE2C00FDF700D7379D /* WoodCutter_ChatGPT_V0.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = WoodCutter_ChatGPT_V0.pdf; sourceTree = "<group>"; };
 		87D0A8FB2BF98B0E003B6BA1 /* WoodCutting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoodCutting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0A8FE2BF98B0E003B6BA1 /* WoodCuttingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodCuttingApp.swift; sourceTree = "<group>"; };
 		87D0A9002BF98B0E003B6BA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		874140F02C00FDFE00D7379D /* ChatGPTLogs */ = {
+			isa = PBXGroup;
+			children = (
+				874140EE2C00FDF700D7379D /* WoodCutter_ChatGPT_V0.pdf */,
+			);
+			path = ChatGPTLogs;
+			sourceTree = "<group>";
+		};
 		87D0A8F22BF98B0E003B6BA1 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +65,7 @@
 		87D0A8FD2BF98B0E003B6BA1 /* WoodCutting */ = {
 			isa = PBXGroup;
 			children = (
+				874140F02C00FDFE00D7379D /* ChatGPTLogs */,
 				87D0A8FE2BF98B0E003B6BA1 /* WoodCuttingApp.swift */,
 				87D0A9142C00174C003B6BA1 /* KeyboardDismissModifier.swift */,
 				87D0A9002BF98B0E003B6BA1 /* ContentView.swift */,
@@ -132,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D0A9062BF98B0F003B6BA1 /* Preview Assets.xcassets in Resources */,
+				874140EF2C00FDF700D7379D /* WoodCutter_ChatGPT_V0.pdf in Resources */,
 				87D0A9032BF98B0F003B6BA1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
