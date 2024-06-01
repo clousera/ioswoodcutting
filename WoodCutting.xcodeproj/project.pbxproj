@@ -8,30 +8,66 @@
 
 /* Begin PBXBuildFile section */
 		874140EF2C00FDF700D7379D /* WoodCutter_ChatGPT_V0.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 874140EE2C00FDF700D7379D /* WoodCutter_ChatGPT_V0.pdf */; };
+		87AF94BC2C0A959600338B69 /* Roadmap in Frameworks */ = {isa = PBXBuildFile; productRef = 87AF94BB2C0A959600338B69 /* Roadmap */; };
+		87AF94BE2C0A9F0A00338B69 /* CustomFeatureVoter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AF94BD2C0A9F0A00338B69 /* CustomFeatureVoter.swift */; };
+		87B9FBB52C02CE5A00A168B4 /* WoodCuttingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9FBB42C02CE5A00A168B4 /* WoodCuttingTests.swift */; };
+		87B9FBBC2C02CE6500A168B4 /* CutOptimizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9FBBB2C02CE6500A168B4 /* CutOptimizerTests.swift */; };
+		87C9F4BE2C07AF7C00BC5F3D /* CutOptimizerBeforeTryingToUpdateToOneMaterialAtATime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9F4BD2C07AF7C00BC5F3D /* CutOptimizerBeforeTryingToUpdateToOneMaterialAtATime.swift */; };
+		87D0817B2C0659F5001D4869 /* thoughtsforAlg in Resources */ = {isa = PBXBuildFile; fileRef = 87D0817A2C0659F5001D4869 /* thoughtsforAlg */; };
+		87D0817D2C066731001D4869 /* SudoAlg in Resources */ = {isa = PBXBuildFile; fileRef = 87D0817C2C066731001D4869 /* SudoAlg */; };
+		87D081832C06938C001D4869 /* CutOptimizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D081822C06938C001D4869 /* CutOptimizer.swift */; };
 		87D0A8FF2BF98B0E003B6BA1 /* WoodCuttingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0A8FE2BF98B0E003B6BA1 /* WoodCuttingApp.swift */; };
 		87D0A9012BF98B0E003B6BA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0A9002BF98B0E003B6BA1 /* ContentView.swift */; };
 		87D0A9032BF98B0F003B6BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0A9022BF98B0F003B6BA1 /* Assets.xcassets */; };
 		87D0A9062BF98B0F003B6BA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0A9052BF98B0F003B6BA1 /* Preview Assets.xcassets */; };
-		87D0A90D2BF98B19003B6BA1 /* CutOptimizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0A90C2BF98B19003B6BA1 /* CutOptimizer.swift */; };
 		87D0A9152C00174C003B6BA1 /* KeyboardDismissModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0A9142C00174C003B6BA1 /* KeyboardDismissModifier.swift */; };
+		87E8B5A42C0A94D700B860F6 /* MyRoadmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8B5A32C0A94D700B860F6 /* MyRoadmapView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87B9FBB62C02CE5A00A168B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87D0A8F32BF98B0E003B6BA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87D0A8FA2BF98B0E003B6BA1;
+			remoteInfo = WoodCutting;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		874140EE2C00FDF700D7379D /* WoodCutter_ChatGPT_V0.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = WoodCutter_ChatGPT_V0.pdf; sourceTree = "<group>"; };
+		875C7AB32C02DED70084CA93 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		87AF94BD2C0A9F0A00338B69 /* CustomFeatureVoter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeatureVoter.swift; sourceTree = "<group>"; };
+		87B9FBB22C02CE5900A168B4 /* WoodCuttingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoodCuttingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B9FBB42C02CE5A00A168B4 /* WoodCuttingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodCuttingTests.swift; sourceTree = "<group>"; };
+		87B9FBBB2C02CE6500A168B4 /* CutOptimizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutOptimizerTests.swift; sourceTree = "<group>"; };
+		87C9F4BD2C07AF7C00BC5F3D /* CutOptimizerBeforeTryingToUpdateToOneMaterialAtATime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutOptimizerBeforeTryingToUpdateToOneMaterialAtATime.swift; sourceTree = "<group>"; };
+		87D0817A2C0659F5001D4869 /* thoughtsforAlg */ = {isa = PBXFileReference; lastKnownFileType = text; path = thoughtsforAlg; sourceTree = "<group>"; };
+		87D0817C2C066731001D4869 /* SudoAlg */ = {isa = PBXFileReference; lastKnownFileType = text; path = SudoAlg; sourceTree = "<group>"; };
+		87D081822C06938C001D4869 /* CutOptimizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutOptimizer.swift; sourceTree = "<group>"; };
 		87D0A8FB2BF98B0E003B6BA1 /* WoodCutting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoodCutting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0A8FE2BF98B0E003B6BA1 /* WoodCuttingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodCuttingApp.swift; sourceTree = "<group>"; };
 		87D0A9002BF98B0E003B6BA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		87D0A9022BF98B0F003B6BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87D0A9052BF98B0F003B6BA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		87D0A90C2BF98B19003B6BA1 /* CutOptimizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutOptimizer.swift; sourceTree = "<group>"; };
 		87D0A9142C00174C003B6BA1 /* KeyboardDismissModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDismissModifier.swift; sourceTree = "<group>"; };
+		87E8B5A12C0A8B1400B860F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		87E8B5A32C0A94D700B860F6 /* MyRoadmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoadmapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		87B9FBAF2C02CE5900A168B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87D0A8F82BF98B0E003B6BA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87AF94BC2C0A959600338B69 /* Roadmap in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,16 +77,37 @@
 		874140F02C00FDFE00D7379D /* ChatGPTLogs */ = {
 			isa = PBXGroup;
 			children = (
+				87D0817A2C0659F5001D4869 /* thoughtsforAlg */,
+				87D0817C2C066731001D4869 /* SudoAlg */,
 				874140EE2C00FDF700D7379D /* WoodCutter_ChatGPT_V0.pdf */,
 			);
 			path = ChatGPTLogs;
 			sourceTree = "<group>";
 		};
+		87AF94BA2C0A959600338B69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87B9FBB32C02CE5A00A168B4 /* WoodCuttingTests */ = {
+			isa = PBXGroup;
+			children = (
+				87B9FBB42C02CE5A00A168B4 /* WoodCuttingTests.swift */,
+				87B9FBBB2C02CE6500A168B4 /* CutOptimizerTests.swift */,
+			);
+			path = WoodCuttingTests;
+			sourceTree = "<group>";
+		};
 		87D0A8F22BF98B0E003B6BA1 = {
 			isa = PBXGroup;
 			children = (
+				87C9F4BD2C07AF7C00BC5F3D /* CutOptimizerBeforeTryingToUpdateToOneMaterialAtATime.swift */,
 				87D0A8FD2BF98B0E003B6BA1 /* WoodCutting */,
+				87B9FBB32C02CE5A00A168B4 /* WoodCuttingTests */,
 				87D0A8FC2BF98B0E003B6BA1 /* Products */,
+				87AF94BA2C0A959600338B69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				87D0A8FB2BF98B0E003B6BA1 /* WoodCutting.app */,
+				87B9FBB22C02CE5900A168B4 /* WoodCuttingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,13 +123,17 @@
 		87D0A8FD2BF98B0E003B6BA1 /* WoodCutting */ = {
 			isa = PBXGroup;
 			children = (
+				87E8B5A12C0A8B1400B860F6 /* Info.plist */,
 				874140F02C00FDFE00D7379D /* ChatGPTLogs */,
 				87D0A8FE2BF98B0E003B6BA1 /* WoodCuttingApp.swift */,
 				87D0A9142C00174C003B6BA1 /* KeyboardDismissModifier.swift */,
 				87D0A9002BF98B0E003B6BA1 /* ContentView.swift */,
-				87D0A90C2BF98B19003B6BA1 /* CutOptimizer.swift */,
+				87E8B5A32C0A94D700B860F6 /* MyRoadmapView.swift */,
+				87AF94BD2C0A9F0A00338B69 /* CustomFeatureVoter.swift */,
+				87D081822C06938C001D4869 /* CutOptimizer.swift */,
 				87D0A9022BF98B0F003B6BA1 /* Assets.xcassets */,
 				87D0A9042BF98B0F003B6BA1 /* Preview Content */,
+				875C7AB32C02DED70084CA93 /* README.md */,
 			);
 			path = WoodCutting;
 			sourceTree = "<group>";
@@ -87,6 +149,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		87B9FBB12C02CE5900A168B4 /* WoodCuttingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B9FBBA2C02CE5A00A168B4 /* Build configuration list for PBXNativeTarget "WoodCuttingTests" */;
+			buildPhases = (
+				87B9FBAE2C02CE5900A168B4 /* Sources */,
+				87B9FBAF2C02CE5900A168B4 /* Frameworks */,
+				87B9FBB02C02CE5900A168B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87B9FBB72C02CE5A00A168B4 /* PBXTargetDependency */,
+			);
+			name = WoodCuttingTests;
+			productName = WoodCuttingTests;
+			productReference = 87B9FBB22C02CE5900A168B4 /* WoodCuttingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		87D0A8FA2BF98B0E003B6BA1 /* WoodCutting */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87D0A9092BF98B0F003B6BA1 /* Build configuration list for PBXNativeTarget "WoodCutting" */;
@@ -100,6 +180,9 @@
 			dependencies = (
 			);
 			name = WoodCutting;
+			packageProductDependencies = (
+				87AF94BB2C0A959600338B69 /* Roadmap */,
+			);
 			productName = WoodCutting;
 			productReference = 87D0A8FB2BF98B0E003B6BA1 /* WoodCutting.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +197,10 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					87B9FBB12C02CE5900A168B4 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 87D0A8FA2BF98B0E003B6BA1;
+					};
 					87D0A8FA2BF98B0E003B6BA1 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -128,21 +215,34 @@
 				Base,
 			);
 			mainGroup = 87D0A8F22BF98B0E003B6BA1;
+			packageReferences = (
+				87E8B5A22C0A949400B860F6 /* XCRemoteSwiftPackageReference "Roadmap" */,
+			);
 			productRefGroup = 87D0A8FC2BF98B0E003B6BA1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				87D0A8FA2BF98B0E003B6BA1 /* WoodCutting */,
+				87B9FBB12C02CE5900A168B4 /* WoodCuttingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		87B9FBB02C02CE5900A168B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87D0A8F92BF98B0E003B6BA1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D0817B2C0659F5001D4869 /* thoughtsforAlg in Resources */,
 				87D0A9062BF98B0F003B6BA1 /* Preview Assets.xcassets in Resources */,
+				87D0817D2C066731001D4869 /* SudoAlg in Resources */,
 				874140EF2C00FDF700D7379D /* WoodCutter_ChatGPT_V0.pdf in Resources */,
 				87D0A9032BF98B0F003B6BA1 /* Assets.xcassets in Resources */,
 			);
@@ -151,20 +251,76 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		87B9FBAE2C02CE5900A168B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B9FBB52C02CE5A00A168B4 /* WoodCuttingTests.swift in Sources */,
+				87B9FBBC2C02CE6500A168B4 /* CutOptimizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87D0A8F72BF98B0E003B6BA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				87D0A9152C00174C003B6BA1 /* KeyboardDismissModifier.swift in Sources */,
-				87D0A90D2BF98B19003B6BA1 /* CutOptimizer.swift in Sources */,
+				87D081832C06938C001D4869 /* CutOptimizer.swift in Sources */,
+				87AF94BE2C0A9F0A00338B69 /* CustomFeatureVoter.swift in Sources */,
 				87D0A9012BF98B0E003B6BA1 /* ContentView.swift in Sources */,
+				87E8B5A42C0A94D700B860F6 /* MyRoadmapView.swift in Sources */,
 				87D0A8FF2BF98B0E003B6BA1 /* WoodCuttingApp.swift in Sources */,
+				87C9F4BE2C07AF7C00BC5F3D /* CutOptimizerBeforeTryingToUpdateToOneMaterialAtATime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		87B9FBB72C02CE5A00A168B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87D0A8FA2BF98B0E003B6BA1 /* WoodCutting */;
+			targetProxy = 87B9FBB62C02CE5A00A168B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		87B9FBB82C02CE5A00A168B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M839BX85D8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = crosseyedcat.WoodCuttingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoodCutting.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WoodCutting";
+			};
+			name = Debug;
+		};
+		87B9FBB92C02CE5A00A168B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M839BX85D8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = crosseyedcat.WoodCuttingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoodCutting.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WoodCutting";
+			};
+			name = Release;
+		};
 		87D0A9072BF98B0F003B6BA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -296,11 +452,11 @@
 				DEVELOPMENT_TEAM = M839BX85D8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WoodCutting;
+				INFOPLIST_FILE = WoodCutting/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Wood Cut Calculator";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,11 +488,11 @@
 				DEVELOPMENT_TEAM = M839BX85D8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WoodCutting;
+				INFOPLIST_FILE = WoodCutting/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Wood Cut Calculator";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -359,6 +515,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		87B9FBBA2C02CE5A00A168B4 /* Build configuration list for PBXNativeTarget "WoodCuttingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B9FBB82C02CE5A00A168B4 /* Debug */,
+				87B9FBB92C02CE5A00A168B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		87D0A8F62BF98B0E003B6BA1 /* Build configuration list for PBXProject "WoodCutting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -378,6 +543,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		87E8B5A22C0A949400B860F6 /* XCRemoteSwiftPackageReference "Roadmap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AvdLee/Roadmap.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		87AF94BB2C0A959600338B69 /* Roadmap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E8B5A22C0A949400B860F6 /* XCRemoteSwiftPackageReference "Roadmap" */;
+			productName = Roadmap;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 87D0A8F32BF98B0E003B6BA1 /* Project object */;
 }

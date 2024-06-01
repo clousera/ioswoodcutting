@@ -1,0 +1,90 @@
+Cases:
+
+- lenght is only thing to consider
+  - width is same as source
+  - width is not same as source
+    - multiple can fit in the width
+    - one can fit in the width
+- width
+  - w
+- length + width
+
+Cases:
+- all width are the same size
+  - same as source
+  - only one can fit in the source
+  - multiple can fit in the source
+- widths are not all the same
+
+- all lengths are the same size
+  - all lengths are the same as the source
+  - all lenghts are the the same size, only one can fit in the source
+  - all lengths are the same size, multiple can fit in the source
+- all lenghts are not the same
+
+// algorithm
+
+*var allcuts
+*var sourceWidth
+*var sourceLength
+*var kerf
+var list<rectangles> = availableSpace // this would start with sourceMaterial1, but could be broken into pieces left of the source material1, so give an id (id, w, l)
+var sourceWidthSplit = list<> ?? null (have a field for the sourceMaterial Index, if null then apply to all)
+var output = List<{sourceMaterialNum, list<cuts>}
+var sourceMaterials = list<>
+
+// figure out width cuts first
+if (all widths are the same size) {
+  if (same as source) {
+    // todo, start calculating length? maybe do nothing yet? set sourceWidthSplit to null?
+    calculate min amount of source material needed (might need to be more) - add to sourceWidthSplit
+  } else if only one can fit in source {
+    splitSourceMaterial for availableSpace into 2 (cutwidth+kerf)
+    calculate min amount of source material needed (might need to be more)
+    save to sourceWidthSplit per min amount of source material needed
+  } else if multiple can fit {
+    splitSourceMaterial for available space into sourceWidth/cutwidth+kerf + remainder
+    calculate min amount of source material needed (might need to be more)
+    save to sourcewidthsplit per min amount of source material needed
+  }
+
+} else (all widths are not the same size) {
+  sort widths into dictionary (dict <width, count>)
+  index = 0
+  while (totalCount in dict > 0) {
+    sourceWidth
+    start with largest width, calculate remainder, --1 from count in dict, add as sourceWidthSplit[i]
+    with remainder, check for combination that does not exceed but gets closest to the remaining width - --1 for count in dict, add to sourceWidthSplit[i]
+  }
+}
+
+list remainingCuts
+
+// now that widths are sectioned out, try to fit the lengths within each allocated source width split
+foreach (sourceWidthSplit) {
+  var remainingCutsWithSameWidth = list<>
+  start with longestLength, add to output, remove from remainingCuts
+  with remaining source Length, check for combination that does not exceed but gets closest to the remaining length - add to output, remove from remainingCuts
+}
+
+*while (remainingcuts > 0) {
+*redo all logic with the remaining cuts?? like add the amount of minimum required source material?
+*}
+
+// calculate remaining area
+foreach (sourceMaterials) {
+  areaUsed = 0
+  totalArea = w x l
+  var outputsforSourceMaterial
+  foreach (output) {
+    areaUsed += width x length
+  }
+  
+  totalArea - areaUsed
+}
+
+totalWaste = (source w x source l) x sourceMaterials.count - sourceMaterials.all.addAllWaste
+}
+
+
+

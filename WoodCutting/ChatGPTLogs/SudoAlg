@@ -1,0 +1,183 @@
+
+
+struct Cut: Identifiable {
+    let id = UUID()
+    let width: Double
+    let length: Double
+}
+
+struct Slices: Identifiable {
+    let sourceMaterialIndex: Int
+    let width: Double
+    let widthKerf: Double
+    let remainingLength: Double
+}
+
+
+class CutOptimzer {
+
+    let sourceWidth: Double
+    let sourceLength: Double
+    let cuts: [Cut]
+    let kerf: Double
+
+    init(sourceWidth: Double, sourceLength: Double, cuts: [Cut], kerf: Double) {
+        self.sourceWidth = sourceWidth
+        self.sourceLength = sourceLength
+        self.cuts = cuts
+        self.kerf = kerf
+    }
+
+    function optimize() -> [CuttingPlan] {
+      var remainingCuts = cuts;
+      var slices = List<Slice>
+      
+      while (remainingCuts.count > 0) {
+      
+        let totalAreaOfCuts = getTotalAreaOfRemainingCuts();
+        
+        if (areAllCutsSameWidth(remainingCuts) {
+          if (areAllCutsSameWidthAsSource) {
+            let totalLengthOfAllCuts = getTotalLengthOfRemainingCutsAndKerf()
+            let numSourceMaterialsNeeded = mod something(totalLengthOfAllCuts / sourceLength)
+            foreach(numSourceMaterialsNeeded, index i) {
+              
+              slices.add([i], cutWidth, 0, sourceLength)
+            }
+          } else if (!canMultipleWidthsFitInSourceWidth()) {
+            let totalLengthOfAllCuts = getTotalLengthOfRemainingCutsAndKerf()
+            let numSourceMaterialsNeeded = mod something(totalLengthOfAllCuts / sourceLength)
+            foreach(numSourceMaterialsNeeded, index i) {
+              slices.add([i], cutWidth, kerf, sourceLength)
+            }
+          } else if (canMultipleWidthsFitInSourceWidth()) {
+            var totalCutsPerSource = mod somehting(sourceWidth / (cutWidth+kerf))
+            var totalSourceMaterialsNeeded = set this based on total length + slices from totalCutsPerSource
+            foreach(numSourceMaterialsNeeded, index i) {
+              slices.add([i], cutWidth, kerf, sourceLength)
+            }
+          }
+        } else {
+          let widthMap = sortWidthsIntoDictionary<width, count>()
+          let totalCount = totalCountInWidthMap
+          while (totalCount > 0, i) {
+            
+            let remainingWidth = sourceWidth
+            - start with the largest width left in the widthMap
+              - remaingingWidth = remainingWidth - (largestWidth+kerf)
+              - subtract from count in dictionary for specified width
+              - slices.add([i], cutWidth, kerf, sourceLength)
+            - next, considering the remainingWidth, check for a combination of remaining cut widths that does not exceed the remaining but gets it the closest to 0 (please do some recursive logic here in a helper function to identify the best combination of remaining widths to fill the remaining space)
+              - for each of those, subtract each width+kerf from remainingWidth, subtraction from count in dictionary for specified with, and add to slice
+            - finally, check if remainingWidth-kerf is greater than any of the remaining widths in the widthMap and keep subtracting from the widthMap, remainingWidth, and adding to Slices if so
+            }
+        
+        }
+        
+        define an ouput object:
+            id, sourceMaterialIndex, remainingWaste: double, list<cut (width and length)>
+        
+        // now that widths are sectioned out, try to fit the lengths within each allocated source width split
+        foreach(slice in slices) {
+          let remainingCutsWithSameWidth = (get this)
+            -start with longestLength, add to output, remove from remainingCuts
+        - with remaining source Length, check for combination that does not exceed but gets closest to the remaining length - add to output, remove from remainingCuts
+    //*** AMANDA YOU LEFT OFF HERE, chat generated the code but you havent done any tests for it yet ***///
+    
+    next is to take all the slices and organize them into cuttingPlan objects based on their sourceMaterial, then put all the cuttingPlans into a cutting PlanOVerview
+    
+    
+    other question is what to do if there are remaining cuts?? if there are and we have to do logic, it will need to be like sourceMaterials with an increased index over all the ones we just did, maybe this should be removed from a while loop? or maybe as part of the adding to a cuttingPlan, you must check that a cuttingPlan with that sourceMaterialIndex doesn't already exist, or just that sourceMaterialIndex always increases on the cuttingPlan object when a new group is added to it? and then also add in a logic function that checks for any existing cuttingPlans for remaining cuts to go through any remaining widths / slices before doing all the logic we just wrote
+    
+    
+    
+          // for the slices with the currentSourceMaterialIndex
+        // calcuate the total remaining area by taking sourceMaterialWidth - (all the widths+kerfs in the slices), and then taking all the remaining lengths from the slices
+        // if the area of any remaining cuts can potentially fit in the area of the waste, then continue, if not, just go to the end of the function
+        // if yes
+        // if there is any remaining width, create a slice with that  width and full sourcelength as remaining length
+        // identify those cuts as potentials in a new array
+        
+        
+        // set remaining length to 0 in the existing slices, and make new slices with the same width+kerfs, remaining length, and rowIndex of 1
+        // check if any of the potential cuts would fit in any slices, if so, add them as a cut to the slice and then remove from the remaining cuts (and potential cuts)
+        //if not, order slices by remaining length
+        // if any slices (more than 1) have the same remaining length, remove remaining length from those slices and combine them so they have the same width, minus the kerf
+      // do you have enought to keep going with this? I essentially want to check if there are any larger/wider pieces that can be utilized at the bottom of a sheet. this is to take care of the 26x26 source material, with 20x20, 5x25, and 20x5 scenario
+    
+
+    - 1, at the end of a while loop, add a copy of the current state of slices to a list of [slice] (processedSlices), then set slices to empty
+    - 2, add to the beginning of the while loop to check if there are any processedSlices that the remaining cuts can fit into before making new slices
+    - outside of the while loop, go through the list of processed slices and increase the sourceMaterialIndex based on number
+    
+    -- the algorithm doesnt currently account for the 26x26, 20x20, 5x25, and 20x5 situation.
+        -- perhaps after each while iteration
+        
+        - add "row" to each slice, all initial slices made in while start with 0
+        
+        
+        after doing length cuts,
+        for each slice in a specific source material (if multiple slices), if remaining length > (min length of all remaining cuts)
+          -- add a w+kerfxl
+        
+        }
+        
+        maybe this should be amended to just do 1 source material at a time, one row at a time, and then move on 
+        
+
+// calculate remaining area
+foreach (output) {
+  areaUsed = 0
+  totalArea = source width x source length
+  var outputsforSourceMaterial
+  foreach (output) {
+    areaUsed += width x length
+  }
+  
+  totalArea - areaUsed
+}
+            
+            
+      
+      
+      }
+    
+    
+    }
+
+
+}
+
+
+unit test cases:
+
+// all width are same size + same as source
+&&
+// all lengths same size as source
+sourceWidth: 3
+sourceLength: 3
+cuts: 3x3, 3x3, 3x3
+cuttingPlans: count of 3, plan remaining waste should be 0 for each plan
+
+// all width are same size + same as source
+&&
+// all lengths same size, only one can fit in source
+
+
+// all width are same size + same as source
+&&
+// all lengths same size,  multiple can fit in the source
+
+
+// all width are same size + same as source
+&&
+// all lengths not the same size
+
+
+// all width are same size + less than source, only one can fit
+
+
+// all widths are same size + less than source, multiple can fit
+
+
+// all widths are not the same size
