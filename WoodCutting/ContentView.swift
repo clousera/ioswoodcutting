@@ -64,6 +64,16 @@ struct ContentView: View {
                   .frame(height: 44)
                   .background(Color(.systemGray6))
                   .cornerRadius(8)
+                  .toolbar {
+                    ToolbarItem(placement: .keyboard) {
+                      HStack {
+                        Spacer()
+                        Button("Done") {
+                          UIApplication.shared.endEditing()
+                        }
+                      }
+                    }
+                  }
                 TextField("Cut Length", text: $currentCutLength)
                   .keyboardType(.decimalPad)
                   .padding()
@@ -162,7 +172,7 @@ struct ContentView: View {
       }
       .dismissKeyboardOnDrag()
       .navigationTitle("Wood Cut Optimizer")
-//      .modifier(NavigationBarModifier())
+      .modifier(NavigationBarModifier())
       .alert(isPresented: $showErrorAlert) {
         Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
       }
@@ -361,13 +371,13 @@ struct CutKey: Hashable {
 struct NavigationBarModifier: ViewModifier {
   func body(content: Content) -> some View {
     content
-      .navigationBarItems(trailing: NavigationLink(destination: MyRoadmapView()) {
-        roadmapButton
+      .navigationBarItems(trailing: NavigationLink(destination: FeedbackView()) {
+        feedbackButton
       })
   }
   
-  var roadmapButton: some View {
-    Image(systemName: "road.lanes")
+  var feedbackButton: some View {
+    Image(systemName: "questionmark.circle")
       .imageScale(.large)
   }
 }
